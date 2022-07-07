@@ -1,0 +1,17 @@
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.csproj.AssemblyReference.cache
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.AssemblyInfoInputs.cache
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.AssemblyInfo.cs
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.deps.json
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.dll
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.pdb
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Core.Application.dll
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Core.Domain.dll
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Core.Application.pdb
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\bin\Debug\net5.0\SocialNetwork.Core.Domain.pdb
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.csproj.CopyComplete
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.dll
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\refint\SocialNetwork.Infrastucture.Persistence.dll
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\SocialNetwork.Infrastucture.Persistence.pdb
+C:\Users\brito\Desktop\itla-2022-c2\programacion3\SocialNetwork\SocialNetwork.Infrastucture.Persistence\obj\Debug\net5.0\ref\SocialNetwork.Infrastucture.Persistence.dll

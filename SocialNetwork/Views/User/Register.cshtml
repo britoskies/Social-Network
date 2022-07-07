@@ -1,0 +1,80 @@
+﻿@using SocialNetwork.Core.Application.ViewModels.User
+@model RegisterUserViewModel
+
+<div class="row">
+    <section class="col-8 mx-auto bg-primary rounded-3 text-white text-center p-3 my-5">
+		<h3 class="display-8 fw-normal text-uppercase fw-bolder m-0">
+            Registro de Usuario
+        </h3>
+	</section>
+    <div class="col-md-6 mx-auto rounded-3 shadow p-4">
+        <form 
+            method="post" 
+            asp-controller="User" 
+            asp-action="Register"
+            enctype="multipart/form-data"
+            class="d-flex flex-column gap-3"
+        >
+            <div class="d-flex gap-3">
+                <div class="w-100">
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="Name" class="form-label">Nombre</label>
+                        <input asp-for="Name" class="form-control" placeholder="Nombre"/>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="LastName" class="form-label">Apellido</label>
+                        <input asp-for="LastName" class="form-control" placeholder="Apellido"/>
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="Email" class="form-label">Correo</label>
+                        <input asp-for="Email" class="form-control" placeholder="Correo"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="PhoneNumber" class="form-label">Teléfono</label>
+                        <input asp-for="PhoneNumber" class="form-control" placeholder="Número de teléfono"/>
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="w-100">
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="File" class="form-label">Selecciona una foto de perfil</label>
+                        <input asp-for="File" class="form-control mb-2"/>
+                     </div>
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="UserName" class="form-label">Usuario</label>
+                        <input asp-for="UserName" class="form-control" placeholder="Usuario"/>
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                        @if (Model.ErrorUserExists) 
+                        {
+                            Model.ErrorUserExists = false;
+                            <span>@Html.ValidationSummary(false, "", new {@class = "text-danger"})</span>
+                        }
+                    </div>
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="Password" class="form-label">Contraseña</label>
+                        <input asp-for="Password" class="form-control" placeholder="Contraseña"/>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="form-group d-flex flex-column gap-2">
+                        <label asp-for="ConfirmPassword" class="form-label">Confirmar contraseña</label>
+                        <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirmar contraseña"/>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary w-100">
+                    Registrar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mx-auto d-flex justify-content-center mt-3">
+    <a asp-action="Index" class="btn btn-lg btn-danger text-white">Volver</a>
+</div>
+

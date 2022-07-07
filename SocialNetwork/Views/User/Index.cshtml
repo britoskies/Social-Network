@@ -1,0 +1,36 @@
+﻿@using SocialNetwork.Core.Application.ViewModels.User
+@model LoginViewModel
+
+<div class="row">
+    <section class="col-10 mx-auto bg-primary rounded-3 text-white text-center p-3 my-5">
+		<h3 class="display-8 fw-normal text-uppercase fw-bolder m-0">
+            Login E-Market
+        </h3>
+	</section>
+    <div class="col-4 mx-auto rounded-3 shadow p-4">
+        @Html.ValidationSummary(false, "", new {@class = "text-danger"})
+        <form method="post" asp-controller="User" asp-action="Index" class="d-flex flex-column gap-3">
+            <div class="form-group d-flex flex-column gap-2">
+                <label asp-for="UserName" class="form-label">Usuario</label>
+                <input asp-for="UserName" class="form-control" placeholder="Usuario"/>
+            </div>
+            <div class="form-group d-flex flex-column gap-2">
+                <label asp-for="UserName" class="form-label">Contraseña</label>
+                <input asp-for="Password" class="form-control" placeholder="Contraseña"/>
+            </div>
+            <div class="form-group mt-3">
+                <input type="submit" value="Acceder" class="btn btn-primary text-white w-100" />
+            </div>
+            <div class="col-7 mx-auto">
+                <a asp-controller="User" asp-action="ForgotPass" class="btn btn-link w-100">
+                    Recuperar contraseña
+                </a>
+            </div>
+            <div class="col-3 mx-auto">
+                <a asp-controller="User" asp-action="Register" class="btn btn-outline-primary w-100">
+                    Registrar
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

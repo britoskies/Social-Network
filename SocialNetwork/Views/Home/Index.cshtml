@@ -1,0 +1,87 @@
+﻿@using SocialNetwork.Core.Application.ViewModels.Publications
+@model List<PublicationViewModel>
+
+<div class="row">
+    <section class="col-8 mx-auto bg-primary rounded-3 text-white text-center p-3 my-5">
+		<h3 class="display-8 fw-normal text-uppercase fw-bolder m-0">
+            Publicaciones
+        </h3>
+	</section>
+    <div class="col-md-6 mx-auto rounded-3 shadow p-4">
+        <form 
+            method="post" 
+            asp-controller="Home" 
+            asp-action="Create"
+            enctype="multipart/form-data" 
+            class="d-flex flex-column gap-3"
+        >
+            <div class="form-group d-flex flex-column gap-2">
+                <label for="File" class="form-label">Selecciona una foto de perfil</label>
+                <input type="file" name="File" class="form-control mb-2"/>
+            </div>
+            <div class="form-group d-flex flex-column gap-2">
+                <label for="exampleTextarea" class="form-label">Contenido</label>
+                <textarea name="Caption" class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Publicar</button>
+        </form>
+
+        @if (Model.Count != 0)
+        {  
+            @foreach (PublicationViewModel item in Model)
+            {        
+                <div class="col-sm-3 mx-auto mb-5">
+                    <section class="card bg-white shadow">
+                        <div class="d-flex justify-content-lg-start">
+                            <section class="d-flex gap-2 w-100">
+                                <img src="@item.User.ProfilePicture" class="img-cover rounded-circle w-100" alt="img">
+                                <h6>@item.User.Name</h6>
+                            </section>
+                            <section class="d-flex gap-2 mt-2">
+                                <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                    <button type="button" class="btn btn-danger">Options</button>
+                                    <div class="btn-group" role="group">
+                                        <button id="btnGroupDrop4" type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop4">
+                                            <a asp-controller="Home" asp-action="Edit" class="dropdown-item">Editar</a>
+                                            <a asp-controller="Home" asp-action="Delete" class="dropdown-item">Borrar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="card-body">
+                            <img src="@item.Image" class="img-cover w-100" alt="img">
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats mt-2 text-center">
+                                @item.Caption
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between total font-weight-bold p-3 mt-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Comentarios
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    Hello, this is a comment
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            }
+        }
+
+        else
+        {
+            <section class="col-4 bg-danger rounded-3 text-white mx-auto text-center p-4 mt-5">
+		        <h3 class="display-8 fw-normal text-uppercase fw-bolder m-0"> No hay publicaciones en el sistema </h3>
+	        </section>
+        }
+    </div>
+</div>
